@@ -44,7 +44,10 @@ class LoginActivity : AppCompatActivity() {
 //    googleSignInclient객체를 만든다.
     var googleSignInClient : GoogleSignInClient? = null
     var GOOGLE_LOGIN_CODE = 9001
+
+//    - CallbackManager 객체 - 페이스북 로그인 결과를 가져오는 객체
     var callbackManager : CallbackManager? = null
+
     // onCreate는 LoginActivity가 실행될때 쫙 한번 실행해줘라는 함수임
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,6 +71,9 @@ class LoginActivity : AppCompatActivity() {
 //        gso를 인자로 전달해서 GoogleSignInClient 객체 생성 !
         googleSignInClient = GoogleSignIn.getClient(this,gso)
 //        printHashKey()
+
+
+//        -CallbackManager.Factory.create() 를 호출하여 로그인 응답을 처리할 콜백 관리자를 만듬
         callbackManager = CallbackManager.Factory.create()
     }
     //Xsd1KUAREcaT32Vv5wIVsV+b4CE=
@@ -103,10 +109,12 @@ class LoginActivity : AppCompatActivity() {
 //        registerForActivityResult()
     }
 
+
+//    그래서 로그인 결과를  callbackManager를 통해 loginManager에게 전달한다
     fun facebookLogin(){
         LoginManager.getInstance()
             .logInWithReadPermissions(this, Arrays.asList("public_profile", "email"))
-
+//    - loginManager를 통해 페이스북에서 [ public_profile , email ] 받을 권한을 요청
         LoginManager.getInstance()
             .registerCallback(callbackManager, object :FacebookCallback<LoginResult>{
                 override fun onSuccess(result: LoginResult?) {
@@ -149,6 +157,9 @@ class LoginActivity : AppCompatActivity() {
 //    3. result가 성공하면 firebaseWithGoogle에 결과 아이디를 넘겨준다 !
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+
+
+//      onActivityResult 메소드에 callbackManager?.onActivityResult(requestCode, resultCode, data) 를 추가해 아래와 같이 만들어준다. ->facebook코드
         callbackManager?.onActivityResult(requestCode, resultCode, data)
         if(requestCode == GOOGLE_LOGIN_CODE){
             // 구글에서 넘겨주는 결과값을 받아옴

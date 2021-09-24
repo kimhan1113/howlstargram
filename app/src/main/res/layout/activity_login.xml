@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <ImageView android:layout_above="@+id/singin_layout"
-        android:layout_alignParentTop="true"
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/singin_layout"
+        android:layout_alignParentTop="true"
         android:src="@drawable/logo_title" />
 
     <LinearLayout android:id="@+id/singin_layout"
