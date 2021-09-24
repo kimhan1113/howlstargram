@@ -76,7 +76,7 @@ class LoginActivity : AppCompatActivity() {
 //        -CallbackManager.Factory.create() 를 호출하여 로그인 응답을 처리할 콜백 관리자를 만듬
         callbackManager = CallbackManager.Factory.create()
     }
-    //Xsd1KUAREcaT32Vv5wIVsV+b4CE=
+
     fun printHashKey() {
         try {
             val info = packageManager.getPackageInfo(packageName, PackageManager.GET_SIGNATURES)
