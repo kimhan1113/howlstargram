@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "867488562722",
+    "project_id": "apptest-3e134",
+    "storage_bucket": "apptest-3e134.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867488562722:android:11c216159a30a10f06547b",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867488562722-0jbi9et7plgjiv0bjckflb7bk9p0bfqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_PABRRBz-9K54F5LIgD-lT3HiUsrc24w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867488562722-0jbi9et7plgjiv0bjckflb7bk9p0bfqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867488562722:android:f4c1a635ae8941f806547b",
+        "android_client_info": {
+          "package_name": "com.example.howlstagram_f16"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867488562722-0jbi9et7plgjiv0bjckflb7bk9p0bfqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_PABRRBz-9K54F5LIgD-lT3HiUsrc24w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867488562722-0jbi9et7plgjiv0bjckflb7bk9p0bfqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
