@@ -5,6 +5,12 @@
       <map>
         <entry key="..\:/Users/kimha/AndroidStudioProjects/howlstagram_f16/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/kimha/AndroidStudioProjects/howlstagram_f16/app/src/main/res/layout/activity_main.xml" value="0.3515625" />
+        <entry key="..\:/Users/kimha/AndroidStudioProjects/howlstagram_f16/app/src/main/res/layout/activity_main_test.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/kimha/AndroidStudioProjects/howlstagram_f16/app/src/main/res/layout/fragment_alarm.xml" value="0.35" />
+        <entry key="..\:/Users/kimha/AndroidStudioProjects/howlstagram_f16/app/src/main/res/layout/fragment_grid.xml" value="0.35" />
+        <entry key="..\:/Users/kimha/AndroidStudioProjects/howlstagram_f16/app/src/main/res/layout/fragment_user.xml" value="0.35" />
+        <entry key="..\:/Users/kimha/AndroidStudioProjects/howlstagram_f16/app/src/main/res/layout/gragment_detail.xml" value="0.35" />
+        <entry key="..\:/Users/kimha/AndroidStudioProjects/howlstagram_f16/app/src/main/res/menu/bottom_navigation_main.xml" value="0.35" />
       </map>
     </option>
   </component>
