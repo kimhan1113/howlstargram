@@ -19,6 +19,13 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     }
 
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
+//        when을 이용해서 item을 눌렀을 때 화면이 넘어갈 수 있도록 설정해준다.
+
+//        - supportFragmenetManager.beginTransaction() 은 Fragment 추가, 제거, 변경 등을 할 수 있다.
+//        - replace 는 그 중에 변경을 뜻함 ( add - 추가 / remove - 제거 ) - 2개의 인자를 가짐
+//        - 첫 번째 인자는 기존의 fragment가 있는 곳, 두 번째 인자는 바꿀 fragment
+//        - commit()을 작성해서 변경내용 저장됨
+
         when(p0.itemId){
             R.id.action_home->{
                 var detailViewFragment = DetailViewFragment()

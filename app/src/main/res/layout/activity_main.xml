@@ -26,6 +26,7 @@
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
 
+<!--        LinearLayout은 각각 구분선의 역할-->
         <LinearLayout
             android:id="@+id/toolbar_division"
             android:background="@color/colorDivision"
@@ -55,6 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_navigation_main"></com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:menu="@menu/bottom_navigation_main">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </RelativeLayout>
